@@ -1,4 +1,5 @@
-# standalone-unrar
+# standalone-unrar [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
+
 
 A standalone `unrar` library without any need for external dependencies.
 This library has the Unarchiver `unar` and `lsar` tools bundled. You can
@@ -129,3 +130,10 @@ unrar('pathTo.rar').list({
 
 });
 ```
+
+[npm-url]: https://npmjs.org/package/standalone-unrar
+[npm-image]: http://img.shields.io/npm/v/standalone-unrar.svg?style=flat
+[npm-downloads]: http://img.shields.io/npm/dm/standalone-unrar.svg?style=flat
+
+[travis-url]: http://travis-ci.org/mikaelbr/standalone-unrar
+[travis-image]: http://img.shields.io/travis/mikaelbr/standalone-unrar.svg?style=flat
