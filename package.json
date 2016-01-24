@@ -12,8 +12,8 @@
     "unrar.js",
     "vendor"
   ],
-  "keywords": [],
-  "author": "",
+  "keywords": ["unrar", "archive", "rar", "standalone", "unarchive"],
+  "author": "Mikael Brevik <mikaelbre@gmail.com>",
   "license": "LGPL",
   "dependencies": {
     "lodash.assign": "^4.0.0"
