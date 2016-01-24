@@ -1,6 +1,6 @@
 {
   "name": "standalone-unrar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A standalone unrar library without any need for external dependencies.",
   "main": "unrar.js",
   "scripts": {
