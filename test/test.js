@@ -45,24 +45,21 @@ describe('unrar', function () {
         done();
       });
     });
-  
-    // Some sort of bug causing this not to work.
-    // it('should unpack just one file', function (done) {
-    //   var archive = unrar(archivePath);
-    //   archive.list(function onListEntries (err, entries) {
-    //     console.log(entries);
-    //     archive.unpack({
-    //       'output-directory': output,
-    //       'files': [entries[0]]
-    //     }, function onListEntries (err, output) {
-    //       expect(err).to.not.exist;
-    //       expect(output).to.not.contain('No files extracted');
-    //       expect(output).to.not.contain('dir/binary');
-    //       console.log(output)
-    //       done();
-    //     });
-    //   });
-    // });
+
+    it('should unpack just one file', function (done) {
+      var archive = unrar(archivePath);
+      archive.list(function onListEntries (err, entries) {
+        archive.unpack({
+          'output-directory': output,
+          'files': [entries[0]]
+        }, function onListEntries (err, output) {
+          expect(err).to.not.exist;
+          expect(output).to.not.contain('No files extracted');
+          expect(output).to.not.contain('dir/binary');
+          done();
+        });
+      });
+    });
 
     it('should unpack', function (done) {
       unrar(protectedArchivePath).unpack({
