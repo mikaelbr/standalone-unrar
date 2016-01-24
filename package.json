@@ -1,0 +1,26 @@
+{
+  "name": "standalone-unrar",
+  "version": "1.0.0",
+  "description": "A standalone unrar library without any need for external dependencies.",
+  "main": "unrar.js",
+  "scripts": {
+    "test": "mocha test/*.js",
+    "docs": "jsdoc2md unrar.js"
+  },
+  "files": [
+    "lib",
+    "unrar.js",
+    "vendor"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "LGPL",
+  "dependencies": {
+    "lodash.assign": "^4.0.0"
+  },
+  "devDependencies": {
+    "jsdoc-to-markdown": "^1.3.3",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.5.1"
+  }
+}
